@@ -36,30 +36,30 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@slack/client": "3.5.4",
+    "@slack/client": "^3.15.0",
     "check-env": "1.2.0",
     "commander": "2.9.0",
-    "html-entities": "^1.2.0",
+    "html-entities": "^1.2.1",
     "imgur": "^0.2.1",
     "irc": "0.5.0",
-    "lodash": "^4.15.0",
+    "lodash": "^4.17.4",
     "quick-gist": "^1.4.0",
     "strip-json-comments": "2.0.1",
     "winston": "2.2.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.9.0",
-    "babel-core": "^6.9.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
     "babel-eslint": "^6.0.4",
-    "babel-preset-es2015": "^6.9.0",
-    "babel-preset-stage-0": "^6.5.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
     "chai": "^3.5.0",
-    "eslint": "^3.2.2",
+    "eslint": "^3.19.0",
     "eslint-config-airbnb-base": "^5.0.1",
-    "eslint-plugin-import": "^1.8.0",
-    "mocha": "^3.0.1",
-    "nyc": "^8.1.0",
-    "sinon": "^1.17.5",
-    "sinon-chai": "^2.8.0"
+    "eslint-plugin-import": "^1.16.0",
+    "mocha": "^3.5.3",
+    "nyc": "^8.4.0",
+    "sinon": "^1.17.7",
+    "sinon-chai": "^2.14.0"
   }
 }
