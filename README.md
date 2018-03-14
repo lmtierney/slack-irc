@@ -1,26 +1,14 @@
-# slack-irc [![Join the chat at https://gitter.im/ekmartin/slack-irc](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ekmartin/slack-irc?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Build Status](https://travis-ci.org/ekmartin/slack-irc.svg?branch=travis)](https://travis-ci.org/ekmartin/slack-irc) [![Coverage status](https://ci.frigg.io/badges/coverage/ekmartin/slack-irc/)](https://ci.frigg.io/ekmartin/slack-irc/last/)
+# SeleniumHQ slack-irc 
 
-> Connects Slack and IRC channels by sending messages back and forth. Read more [here](https://ekmartin.com/2015/slack-irc).
+This is a bot specifically tailored to the SeleniumHQ community. It allows for a Slack <-> IRC communication by creating an IRC bot user for each Slack user. The original project can be found at https://github.com/ekmartin/slack-irc.
 
-## Demo
-![Slack IRC](http://i.imgur.com/58H6HgO.gif)
 
 ## Installation and usage
-*Note*: [node-irc](https://github.com/martynsmith/node-irc/)
-uses icu-charset-detector as an optional dependency,
-which might fail to install depending on how you've installed Node.js.
-slack-irc works fine anyhow though, so no need to worry.
 
-Installing with npm:
-```bash
-$ npm install -g slack-irc
-$ slack-irc --config /path/to/config.json
-```
-
-or by cloning the repository:
+Clone the repository:
 
 ```bash
-$ git clone https://github.com/ekmartin/slack-irc.git && cd slack-irc
+$ git clone https://github.com/lmtierney/slack-irc.git && cd slack-irc
 $ npm install
 $ npm run build
 $ npm start -- --config /path/to/config.json # Note the extra -- here
@@ -103,13 +91,6 @@ Valid JSON cannot contain comments, so remember to remove them first!
 
 `ircOptions` is passed directly to node-irc ([available options](http://node-irc.readthedocs.org/en/latest/API.html#irc.Client)).
 
-## Personal IRC Client
-slack-irc strengths mainly lie in many-to-many communication from Slack to IRC (and vice versa),
-and is thus not very suitable as a makeshift IRC client for one user. If that's
-what you need, check out
-[aeirola/slack-irc-client](https://github.com/aeirola/slack-irc-client),
-which adds an array of features to solve this problem as smoothly as possible.
-
 ## Development
 To be able to use the latest ES2015+ features, slack-irc uses [Babel](https://babeljs.io).
 
@@ -123,29 +104,3 @@ Run the tests with:
 ```bash
 $ npm test
 ```
-
-### Style Guide
-slack-irc uses a slightly modified version of the
-[Airbnb Style Guide](https://github.com/airbnb/javascript/tree/master/es5).
-[ESLint](http://eslint.org/) is used to make sure this is followed correctly, which can be run with:
-
-```bash
-$ npm run lint
-```
-
-The deviations from the Airbnb Style Guide can be seen in  the [.eslintrc](.eslintrc) file.
-
-## Docker
-A third-party Docker container can be found [here](https://github.com/caktux/slackbridge/).
-
-## License
-
-(The MIT License)
-
-Copyright (c) 2015 Martin Ek <mail@ekmartin.com>
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
