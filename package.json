@@ -36,7 +36,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@slack/client": "^3.15.0",
+    "@slack/client": "^4.6.0",
+    "babel-polyfill": "^6.26.0",
     "check-env": "1.2.0",
     "commander": "2.9.0",
     "gists": "^1.0.1",
